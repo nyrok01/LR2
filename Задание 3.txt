@@ -1,0 +1,15 @@
+def reverse():
+    a = (int(input("Введите число: ")))
+    n = abs(a)
+    rev = 0
+    while(n > 0):
+        dig = n % 10
+        rev = rev * 10 + dig
+        n = n // 10
+    if (a < 0 ): rev = 0 - rev
+    
+    print("Число с цифрами в обратном порядке:", rev)
+
+
+if __name__ == '__main__':
+    reverse()

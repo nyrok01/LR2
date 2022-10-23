@@ -1,0 +1,15 @@
+def root():
+    x = float(input("Введите число: "))
+    n = int(input("Введите cтепень: "))
+    
+    eps = 0.001
+    x0 = int(input("Введите x0: "))
+    
+    while(1):
+        x1 = (((n - 1) * x0) + (x /(x0 ** (n - 1)))) / n
+        if abs(x1 - x0) < eps:
+            return x1
+        x0 = x1
+
+if __name__ == '__main__':
+    print(root())

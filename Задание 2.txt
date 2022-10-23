@@ -1,0 +1,18 @@
+def abc():
+    n = list(map(int, input("Введите список: ").split()))
+    a = list()
+    b = list()
+    c = list()
+
+    for i in range(len(n)):
+        if n[i] % 2 == 0: a.append(n[i])
+        if n[i] % 3 == 0: b.append(n[i])
+        if n[i] % 5 == 0: c.append(n[i])
+
+    print("a.",*a)
+    print("b.",*b)
+    print("c.",*c)
+    
+
+if __name__ == '__main__':
+    abc()
